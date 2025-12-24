@@ -91,13 +91,18 @@ Medique turns clinics into:
 **Our goal is simple:**  
 Patients should wait in comfort, not in chaos.
 
+**Deployments:**
+
+patient portal: https://medique-eta.vercel.app/
+
+admin and doctor portal: https://mediq-admin.vercel.app/
 ## ✨ Key Features
 
 | Feature | Description |
 |---------|-------------|
 | ⏱️ **Digital Queuing** | Real-time patient queue management per doctor |
 | 🏠 **Remote Waiting** | Patients wait from home—no more crowded waiting rooms |
-| 🤖 **AI-Powered Predictions** | Waiting time forecasting using crowd data, consultation history, and traffic |
+| 🤖 **AI-Powered Predictions(in future)** | Waiting time forecasting using crowd data, consultation history, and traffic |
 | 🧠 **Face Recognition** | Optional secure patient verification via face recognition (hardware/mobile) |
 | 🔐 **Secure Authentication** | JWT-based secure access for patients and staff |
 | 🌐 **Multi-Service Architecture** | Separate backends for API, AI logic, and ML services |

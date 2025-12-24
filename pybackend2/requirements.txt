@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+python-dotenv
+
+numpy
+opencv-python-headless
+
+pymongo
+
+insightface
+onnxruntime

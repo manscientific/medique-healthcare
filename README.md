@@ -1,144 +1,320 @@
-# Medique Healthcare
+# 🏥 Medique — Smart Patient Queue & Waiting Time Management System
 
-Professional, scalable healthcare web application built with JavaScript.
+**Revolutionizing healthcare waiting experiences through intelligent digital queuing.**
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) [![Built with JavaScript](https://img.shields.io/badge/Made%20with-JavaScript-yellowgreen.svg)]()
-
-## Table of Contents
-
-- About
-- Features
-- Tech Stack
-- Getting Started
-  - Prerequisites
-  - Installation
-  - Environment Variables
-  - Running Locally
-- Testing
-- Deployment
-- Project Structure
-- Contributing
-- License
-- Maintainers & Support
-
-## About
-
-Medique Healthcare is a modern, extensible healthcare web application focused on delivering secure patient management and clinical workflows. The project is implemented primarily in JavaScript, with supporting CSS and Python scripts for tooling and automation.
-
-This README provides setup and contribution guidelines. Replace placeholder values and sections with project-specific details as required.
-
-## Features
-
-- Patient records management (CRUD)
-- Appointment scheduling and calendar integration
-- Role-based access control (admins, clinicians, staff)
-- Secure authentication and session management
-- Audit logging and activity history
-- RESTful API endpoints for integration with third-party systems
-
-## Tech Stack
-
-- Primary language: JavaScript (frontend/backend)
-- Styling: CSS
-- Additional tooling/scripts: Python
-- Recommended runtimes: Node.js (LTS), npm or Yarn
-
-## Getting Started
-
-These instructions will get a copy of the project up and running on your local machine for development and testing purposes.
-
-### Prerequisites
-
-- Node.js (16.x or later recommended)
-- npm (v8+) or Yarn
-- Git
-
-### Installation
-
-1. Clone the repository:
-
-   git clone https://github.com/manscientific/medique-healthcare.git
-   cd medique-healthcare
-
-2. Install dependencies:
-
-   npm install
-   # or
-   yarn install
-
-### Environment Variables
-
-Create a .env file in the project root (do NOT commit secrets). Example variables:
-
-DATABASE_URL=postgres://user:password@localhost:5432/medique_db
-PORT=3000
-JWT_SECRET=your_jwt_secret
-NODE_ENV=development
-
-Update values to match your development environment. Add any additional variables required by the project.
-
-### Running Locally
-
-Start the application in development mode:
-
-npm run dev
-# or
-yarn dev
-
-Open http://localhost:3000 in your browser (adjust port if different).
-
-## Testing
-
-Run unit and integration tests:
-
-npm test
-# or
-yarn test
-
-Add or update tests under the tests/ or __tests__/ directory according to the project's test runner.
-
-## Deployment
-
-- Build for production:
-
-npm run build
-# or
-yarn build
-
-- Recommended platforms: Vercel, Netlify (frontend), Heroku, DigitalOcean, AWS, or a containerized deployment (Docker/Kubernetes) for full-stack deployments.
-
-Include any CI/CD pipeline configuration (GitHub Actions, GitLab CI) in .github/workflows or corresponding dirs.
-
-## Project Structure (suggested)
-
-- src/             - Application source code
-- public/          - Static assets and index.html (if applicable)
-- scripts/         - Utility scripts (Python or JS)
-- tests/           - Test suites
-- .github/         - CI/CD workflows and issue templates
-
-Adjust to reflect the repository's actual structure.
-
-## Contributing
-
-We welcome contributions! Please follow these steps:
-
-1. Fork the repository.
-2. Create a feature branch: git checkout -b feat/your-feature
-3. Commit your changes: git commit -m "feat: short description"
-4. Push to your fork: git push origin feat/your-feature
-5. Open a pull request describing your changes and rationale.
-
-Please include tests and update documentation where applicable. Use conventional commits for clearer history.
-
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for details. If you prefer a different license, replace this section accordingly.
-
-## Maintainers & Support
-
-Maintained by the manscientific organization. For support or questions, open an issue or contact the maintainers via the repository. Include steps to reproduce and relevant logs.
+Medique is an innovative multi-service healthcare platform designed to **significantly reduce patient waiting times** at clinics and hospitals. By digitizing traditional queues and enabling patients to wait remotely from home, Medique enhances patient comfort, reduces clinic overcrowding, and optimizes healthcare operational efficiency.
 
 ---
 
-Thank you for using Medique Healthcare. Contributions, bug reports, and feature requests are appreciated.
+# 🚀 Why Medique Is Truly Unique
+
+## 🕒 The Problem
+
+In most clinics and government hospitals, patients are forced to wait for hours in crowded, chaotic waiting rooms.  
+There is:
+
+- **No real-time visibility** of the queue
+- **No control** over waiting time
+- **High risk** of infection
+- **Huge wastage** of time for patients and attendants
+
+Appointments exist, but waiting is still offline and unmanaged.
+
+---
+
+## 🌐 Medique's Solution: Remote Waiting System
+
+Medique completely eliminates physical waiting by converting it into a remote, digital process.
+
+**Instead of sitting in the clinic:**
+- Patients join the queue **from home**
+- They track their position **live**
+- They arrive at the clinic **only when needed**
+
+**Waiting no longer means being present physically.**
+
+---
+
+## 🏥 Digital Waiting Room (Core Innovation)
+
+Each doctor gets a **Digital Waiting Room** that updates automatically in real time.
+
+### How it works:
+
+1. **Patient Registration**
+   - Patient registers using their phone (face scan or secure digital check-in)
+   - The system increments the waiting count (+1) for that doctor
+
+2. **Live Queue Visibility**
+   - Patients see:
+     - Current waiting count
+     - Estimated waiting time
+     - Their position in the queue
+   - This works **remotely, from anywhere**
+
+3. **Doctor Entry Confirmation**
+   - Just before meeting the doctor, the patient goes through a final verification
+   - The system decrements the waiting count (-1)
+   - Queue updates instantly for everyone
+
+**The entire waiting process is automatic, transparent, and real-time.**
+
+---
+
+## 🔑 What Makes Medique Different from Everything Else
+
+### ❌ **What we eliminate:**
+- No manual tokens
+- No verbal calling of patients
+- No overcrowded waiting rooms
+- No uncertainty
+
+### ✅ **What we provide:**
+- Fully automated queue management
+- Remote waiting from home
+- Real-time digital updates
+- Reduced infection risk
+- Massive time savings for patients
+- Organized workflow for doctors
+
+**Medique doesn't just optimize waiting — it redefines how waiting should exist in healthcare.**
+
+---
+
+## 🎯 The Bigger Vision
+
+Medique turns clinics into:
+- **Predictable systems**
+- **Digitally managed spaces**
+- **Patient-first environments**
+
+**Our goal is simple:**  
+Patients should wait in comfort, not in chaos.
+
+## ✨ Key Features
+
+| Feature | Description |
+|---------|-------------|
+| ⏱️ **Digital Queuing** | Real-time patient queue management per doctor |
+| 🏠 **Remote Waiting** | Patients wait from home—no more crowded waiting rooms |
+| 🤖 **AI-Powered Predictions** | Waiting time forecasting using crowd data, consultation history, and traffic |
+| 🧠 **Face Recognition** | Optional secure patient verification via face recognition (hardware/mobile) |
+| 🔐 **Secure Authentication** | JWT-based secure access for patients and staff |
+| 🌐 **Multi-Service Architecture** | Separate backends for API, AI logic, and ML services |
+| 🐳 **Full Containerization** | Dockerized setup—run everything with one command |
+
+---
+
+## 🛠️ Tech Stack
+
+### **Frontend**
+- React (Vite) – Patient & Admin portals
+
+### **Backend Services**
+- **Main API**: Node.js + Express (RESTful endpoints, authentication)
+- **AI/Queue Logic**: Python + FastAPI (real-time queue management & predictions)
+- **ML Service**: Python (face recognition & waiting time prediction models)
+
+### **Database**
+- MongoDB (NoSQL for flexible healthcare data storage)
+
+### **DevOps & Deployment**
+- Docker + Docker Compose (container orchestration)
+- Environment-based configuration
+
+---
+
+## 📁 Project Structure
+
+```
+medique/
+├── frontend/                 # Patient-facing React application
+├── admin/                    # Admin dashboard React application
+├── backend/                  # Node.js + Express main API
+├── pybackend/                # Python + FastAPI queue & AI service
+├── ml-service/               # Machine learning models (face recognition, predictions)
+├── docker-compose.yml        # Multi-container orchestration
+├── .env.example              # Environment variables template
+├── README.md                 # Project documentation
+└── .gitignore                # Git exclusion rules
+```
+
+---
+
+## 🚀 Getting Started
+
+### ✅ **Prerequisites**
+You only need **two tools** installed locally:
+1. **Docker**
+2. **Docker Compose**
+
+**No need to install:** Node.js, Python, MongoDB, or any other dependencies—they are all containerized.
+
+#### **Verify Installation**
+```bash
+docker --version
+docker compose version
+```
+
+### 🐳 **Run the Entire System with One Command**
+
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd medique
+   ```
+
+2. **Set up environment variables**
+   ```bash
+   cp .env.example .env
+   # Edit .env with your configuration (if needed)
+   ```
+
+3. **Build and launch all services**
+   ```bash
+   docker compose up --build
+   ```
+
+4. **Access the applications**
+   - **Patient Portal**: http://localhost:5173
+   - **Admin Dashboard**: http://localhost:5174
+   - **API Documentation**: http://localhost:8000/docs (FastAPI)
+   - **Main API**: http://localhost:5000/api
+
+---
+
+## 🔧 Development & Customization
+
+### **Service Ports**
+| Service | Port | Description |
+|---------|------|-------------|
+| Frontend | 5173 | Patient application |
+| Admin(admin+doctor login) | 5174 | Administrative interface |
+| Node API | 5000 | Primary REST API |
+| FastAPI | 8000 | AI & queue management API |
+| MongoDB | 27017 | Database |
+|
+
+### **Running Specific Services**
+```bash
+# Start only database and main API
+docker compose up mongodb backend
+
+# Rebuild a specific service
+docker compose up --build frontend
+```
+
+### **View Logs**
+```bash
+# All services logs
+docker compose logs
+
+# Specific service logs
+docker compose logs backend
+
+# Follow logs in real-time
+docker compose logs -f frontend
+```
+
+### **Stop All Services**
+```bash
+docker compose down
+
+# Remove volumes (cleans database)
+docker compose down -v
+```
+
+---
+
+## 🔐 Environment Configuration
+
+Copy `.env.example` to `.env` and customize:
+
+```env
+
+# ==================================
+# GLOBAL
+# ==================================
+NODE_ENV=production
+CURRENCY=INR
+JWT_SECRET=your_jwt_secret_here
+
+# ==================================
+# DATABASES (SEPARATE)
+# ==================================
+
+# Node backend DB
+MONGO_URI=mongodb://mongo:27017/prescripto
+
+# Python backend DB
+PYTHON_MONGO_URI=mongodb://mongo:27017/waiting_room
+PYTHON_DB_NAME=waiting_room
+
+
+
+# ==================================
+# EMAIL (SMTP)
+# ==================================
+SMTP_SERVER=smtp.gmail.com
+SMTP_PORT=587
+EMAIL_USERNAME=your_email@gmail.com
+EMAIL_PASSWORD=your_email_app_password
+
+# ==================================
+# FACE RECOGNITION
+# ==================================
+FACE_THRESHOLD=0.75
+
+# ==================================
+# ADMIN PANEL
+# ==================================
+ADMIN_EMAIL=admin@example.com
+ADMIN_PASSWORD=admin_password_here
+
+# ==================================
+# CLOUDINARY
+# ==================================
+CLOUDINARY_NAME=your_cloudinary_name
+CLOUDINARY_API_KEY=your_cloudinary_api_key
+CLOUDINARY_SECRET_KEY=your_cloudinary_secret_key
+
+# ==================================
+# PAYMENTS
+# ==================================
+RAZORPAY_KEY_ID=your_razorpay_key_id
+RAZORPAY_KEY_SECRET=your_razorpay_key_secret
+STRIPE_SECRET_KEY=your_stripe_secret_key
+
+# ==================================
+# PORTS
+# ==================================
+NODE_PORT=4000
+PYTHON_PORT=8000
+
+# ==================================
+# FRONTEND (VITE)
+# ==================================
+VITE_CURRENCY=₹
+VITE_BACKEND_URL=http://localhost:4000
+VITE_API_BASE=http://localhost:8000
+VITE_RAZORPAY_KEY_ID=your_razorpay_key_id
+
+```
+
+---
+
+
+---
+
+
+---
+
+## 🙏 Acknowledgments
+
+- Healthcare professionals for insights into patient flow management
+- Open-source communities like greatstack for the amazing tools
+- Contributors who help improve Medique
+
+---
+
+**Made with ❤️ for better healthcare experiences**

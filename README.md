@@ -96,6 +96,9 @@ Patients should wait in comfort, not in chaos.
 patient portal: https://medique-eta.vercel.app/
 
 admin and doctor portal: https://mediq-admin.vercel.app/
+
+***NOTE***
+   WE HAVE DEPLOYED OUR BACKEND ON RENDER UNDER FREE TIER AND RENDER SLEEPS AFTER 15 MINUTES OF INACTIVITY . A COLD START NEEDS 2-3 MINUTES TO ANSWER THE REUQESTS SO PLEASE WAIT IF IT LAGS .
 ## ✨ Key Features
 
 | Feature | Description |
@@ -127,6 +130,7 @@ admin and doctor portal: https://mediq-admin.vercel.app/
 - Docker + Docker Compose (container orchestration)
 - Environment-based configuration
 
+  
 ---
 
 ## 📁 Project Structure

@@ -1,6 +1,8 @@
-# 🏥 Medique — Smart Patient Queue & Waiting Time Management System ,wait without waiting.
+# 🏥 Medique — Smart Patient Queue & Waiting Time Management System
 
 **Revolutionizing healthcare waiting experiences through intelligent digital queuing.**
+
+*wait without waiting*
 
 Medique is an innovative multi-service healthcare platform designed to **significantly reduce patient waiting times** at clinics and hospitals. By digitizing traditional queues and enabling patients to wait remotely from home, Medique enhances patient comfort, reduces clinic overcrowding, and optimizes healthcare operational efficiency.
 

@@ -151,6 +151,9 @@ medique/
 You only need **two tools** installed locally:
 1. **Docker**
 2. **Docker Compose**
+3. Cloudinary Account (for image assets)
+4. Stripe/Razorpay API Keys (not compulsory but if u want payements to work)
+
 
 **No need to install:** Node.js, Python, MongoDB, or any other dependencies—they are all containerized.
 

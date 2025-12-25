@@ -1,4 +1,4 @@
-# 🏥 Medique — Smart Patient Queue & Waiting Time Management System
+# 🏥 Medique — Smart Patient Queue & Waiting Time Management System ,wait without waiting.
 
 **Revolutionizing healthcare waiting experiences through intelligent digital queuing.**
 

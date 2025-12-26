@@ -168,6 +168,7 @@ You only need **two tools** installed locally:
 ```bash
 docker --version
 docker compose version
+open docker desktop and run docker engine
 ```
 
 ### 🐳 **Run the Entire System with One Command**

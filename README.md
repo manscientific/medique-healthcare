@@ -142,6 +142,7 @@ medique/
 ├── frontend/                 # Patient-facing React application
 ├── admin/                    # Admin dashboard React application
 ├── backend/                  # Node.js + Express main API
+├── DetailedProjectReport.pdf  commplete project details
 ├── pybackend2/                # Python + FastAPI queue & AI service
 ├── docker-compose.yml        # Multi-container orchestration
 ├── .env.example              # Environment variables template
